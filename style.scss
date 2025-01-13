@@ -1,0 +1,52 @@
+.calculator {
+    border-radius: 10px;
+    margin: 0px auto;
+    background-color: #4E4E4E;
+    width: 70vw;
+
+    @media (min-width: 1024px) {
+        width: 40vw;
+    }
+
+    .input {
+        font-size: 30px;
+    }
+
+    .claculator-inputbox {
+        width: 50vw;
+        background-color: #CFDECF;
+        margin: 0px auto;
+        border-radius: 10px;
+
+        @media (min-width: 1024px) {
+            width: 30vw;
+        }
+    }
+
+    .button-container {
+        width: 50vw;
+        margin: 0px auto;
+
+        @media (min-width: 1024px) {
+            width: 30vw;
+        }
+
+        .button {
+            border-radius: 10px;
+            width: 60px;
+            padding: 10px;
+
+            @media (min-width: 1024px) {
+                width: 85px;
+                padding: 20px;
+                background-color: #EBEBEA;
+                font-size: 25px;
+            }
+        }
+
+        .ans-button {
+            background-color: #FDC382;
+        }
+
+    }
+}
