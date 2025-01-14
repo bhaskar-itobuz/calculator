@@ -28,20 +28,24 @@
 
     .button-container {
         margin: 0px auto;
+
         .button {
             font-weight: bold;
             border-radius: 20px;
             width: 60px;
             padding: 10px;
             background-color: #EBEBEA;
+
             @media (min-width: 768px) {
                 width: 65px;
             }
+
             @media (min-width: 1024px) {
                 width: 90px;
                 padding: 10px;
                 font-size: 30px;
             }
+
             @media (min-width: 1044px) {
                 width: 85px;
                 padding: 15px;
