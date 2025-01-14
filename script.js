@@ -117,7 +117,7 @@ function ans() {
     }
 
     for (let i = count; i < exp.length; i++) {
-        if (exp[i] === "+" || exp[i] === "-" || exp[i] === "X" || exp[i] === "/" || exp[i] === "%") {
+        if (exp[i] === "+" || exp[i] === "-" || exp[i] === "X" || exp[i] === "/" ) {
             if (operation === '+') {
                 out += Number(operend);
                 operation = exp[i];
@@ -130,11 +130,6 @@ function ans() {
             }
             else if (operation === 'X') {
                 out *= Number(operend);
-                operation = exp[i];
-                operend = "";
-            }
-            else if (operation === '%') {
-                out = out % Number(operend);
                 operation = exp[i];
                 operend = "";
             }
@@ -157,9 +152,6 @@ function ans() {
             }
             else if (operation === '/') {
                 out = out / Number(operend);
-            }
-            else if (operation === '%') {
-                out = out % Number(operend);
             }
         }
         else {
