@@ -1,7 +1,7 @@
 .calculator {
   border-radius: 30px;
   margin: 0px auto;
-  background-color: #4E4E4E;
+  background-color: #000000;
   width: 100vw;
 }
 @media (min-width: 768px) {
@@ -22,7 +22,8 @@
   overflow: hidden;
   text-align: right;
   width: 100%;
-  background-color: #CFDECF;
+  background-color: #333333;
+  color: #EBEBEA;
   margin: 0px auto;
   border-radius: 10px;
 }
@@ -34,7 +35,8 @@
   border-radius: 20px;
   width: 60px;
   padding: 10px;
-  background-color: #EBEBEA;
+  background-color: #333333;
+  color: #EBEBEA;
 }
 @media (min-width: 768px) {
   .calculator .button-container .button {
@@ -56,5 +58,17 @@
   }
 }
 .calculator .button-container .ans-button {
-  background-color: #FDC382;
+  background-color: #FF9F09;
+  color: #EBEBEA;
+}
+.calculator .button-container .clear {
+  background-color: #A5A5A5;
+}
+.calculator .button-container .operation,
+.calculator .button-container .delete {
+  background-color: #FF9F09;
+}
+.calculator .button-container .percentage,
+.calculator .button-container .sign {
+  background-color: #A5A5A5;
 }/*# sourceMappingURL=style.css.map */

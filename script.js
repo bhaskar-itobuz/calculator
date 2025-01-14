@@ -48,6 +48,15 @@ function changsign() {
     const change = Number(number) * -1;
     number = change;
     input.innerHTML = number;
+    let size = input.innerHTML.length;
+    if (change > 0) {
+        let changExp = exp.slice(0, -(size + 1));
+        exp = changExp + "+" + number;
+    }
+    else {
+        let changExp = exp.slice(0, -(size));
+        exp = changExp + number;
+    }
 }
 
 percentage.addEventListener("click", percentageCal);
@@ -65,9 +74,9 @@ function clearAll() {
     number = "";
 }
 
-deletAt.addEventListener("click", deletele);
+deletAt.addEventListener("click", deletEle);
 let ch;
-function deletele() {
+function deletEle() {
     if (input.innerHTML === "0") {
         return;
     }
