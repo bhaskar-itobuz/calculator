@@ -1,12 +1,18 @@
 .calculator {
-  border-radius: 50px;
+  border-radius: 30px;
   margin: 0px auto;
   background-color: #4E4E4E;
-  width: 70vw;
+  width: 100vw;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  .calculator {
+    width: 50vw;
+  }
+}
+@media (min-width: 1044px) {
   .calculator {
     width: 32vw;
+    border-radius: 50px;
   }
 }
 .calculator .input {
@@ -27,12 +33,24 @@
   border-radius: 20px;
   width: 60px;
   padding: 10px;
+  background-color: #EBEBEA;
+}
+@media (min-width: 768px) {
+  .calculator .button-container .button {
+    width: 65px;
+  }
 }
 @media (min-width: 1024px) {
   .calculator .button-container .button {
+    width: 90px;
+    padding: 10px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1044px) {
+  .calculator .button-container .button {
     width: 85px;
     padding: 15px;
-    background-color: #EBEBEA;
     font-size: 30px;
   }
 }
